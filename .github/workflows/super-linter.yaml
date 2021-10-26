@@ -1,5 +1,5 @@
 ---
-# original template from: https://github.com/bretfisher/super-linter-example/blob/main/.github/workflows/super-linter.yaml
+# origional template from: https://github.com/bretfisher/super-linter-example/blob/main/.github/workflows/super-linter.yaml
 
 ###########################
 ###########################
@@ -69,7 +69,6 @@ jobs:
           # shellcheck disable=2086
           echo "DEFAULT_BRANCH=${{ github.base_ref }}" >> $GITHUB_ENV
           echo "this is a PR branch. Let's only lint the files that are changed against the target branch '${{ github.base_ref }}'"
-
       - name: Set DEFAULT_BRANCH to current branch
         # if base_ref has no value, this is just a commit on a branch
         # we need to strip refs/heads from github.ref to find the current branch name
@@ -80,12 +79,10 @@ jobs:
           # shellcheck disable=2086
           echo "DEFAULT_BRANCH=$(echo '${{ github.ref }}' | sed 's/refs\/heads\///')" >> $GITHUB_ENV
           echo "this is just a branch push, not a PR."
-
       # used as a debug step to ensure we're only linting all files on release branches
       - name: Are we linting all files?
         run: |
           echo VALIDATE_ALL_CODEBASE=${{ !contains(github.event_name, 'pull_request') }}
-
       #############################
       # Run many Linters against changed files on PRs, and ALL files on commit to release branch
       #############################
