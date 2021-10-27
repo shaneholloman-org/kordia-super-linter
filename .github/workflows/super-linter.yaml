@@ -5,7 +5,7 @@
 ## Linter GitHub Actions ##
 ###########################
 ###########################
-name: Lint all the codes!
+name: Lint Code Base (Custom)!
 
 #
 # Documentation:
