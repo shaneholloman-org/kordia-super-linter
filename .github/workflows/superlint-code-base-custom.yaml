@@ -5,7 +5,7 @@
 ## Linter GitHub Actions ##
 ###########################
 ###########################
-name: Lint Code Base (Custom)!
+name: Superlint Code Base Custom
 
 #
 # Documentation:
