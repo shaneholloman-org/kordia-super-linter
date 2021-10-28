@@ -109,4 +109,9 @@ jobs:
           # editorconfig-linter is rather generic and file-specific linters are better
           # turn off editorconfig-checker, which flags too many false positives
           VALIDATE_EDITORCONFIG: false
+<<<<<<< HEAD
           # prevent Kubernetes CRD API's from causing kubeval to fail
+=======
+          # prevent Kubernetes CRD API's from causing kubeval to fail
+          KUBERNETES_KUBEVAL_OPTIONS: --ignore-missing-schemas
+>>>>>>> e0a525efcde8dd785c265333d326fe013e34ffee
