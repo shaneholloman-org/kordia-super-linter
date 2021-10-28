@@ -86,7 +86,7 @@ jobs:
       # Run many Linters against changed files on PRs, and ALL files on commit to release branch
       #############################
       # https://github.com/marketplace/actions/super-linter
-      - name: Lint Code Base
+      - name: Lint Code Base with v4.8.0
         uses: github/super-linter@v4.8.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
