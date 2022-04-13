@@ -1,6 +1,6 @@
 # Kordia Super Linter
 
-- Reusable Worklow Example
+- Reusable Worklow Example...
 
 The GitHub [Super-Linter](https://github.com/marketplace/actions/super-linter) project is a great way to lint all your file types with a single GitHub Actions Workflow.
 A way to implement it is in all repos using a Workflow step that points to this Reusable Workflow.
