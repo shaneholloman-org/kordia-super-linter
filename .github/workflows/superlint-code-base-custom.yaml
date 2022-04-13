@@ -44,7 +44,7 @@ jobs:
     name: Super-Linter
 
     # Set the agent to run on
-    runs-on: tower
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Code
